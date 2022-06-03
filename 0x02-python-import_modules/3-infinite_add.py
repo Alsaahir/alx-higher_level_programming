@@ -3,12 +3,12 @@ import sys
 
 
 def main(*argv):
-    i = 1
+    arg_count = len(sys.argv)
     sum = 0
-    while i < len(sys.argv) - 1:
-        for args in (sys.argv[i]):
-            sum += int(args)
-        i += 1
+    if arg_count > 1:
+        for args in sys.argv:
+            if args != sys.argv[0]:
+                sum = sum + int(args)
     print(sum)
 
 
