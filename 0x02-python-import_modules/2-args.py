@@ -6,7 +6,7 @@ def main(*argv):
     i = 0
     arg_count = len(sys.argv) - 1
     if arg_count == 1:
-        print("{:d} arguments:".format(arg_count))
+        print("{:d} argument:".format(arg_count))
     elif arg_count == 0:
         print("{:d} arguments.".format(arg_count))
     else:
