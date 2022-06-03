@@ -6,3 +6,7 @@
 3-infinite_add.py is a program that prints the result of the addition of all arguments<br />
 4-hidden_discovery.py is a program that prints all the names defined by the compiled module hidden_4.pyc<br />
 5-variable_load.py is a program that imports the variable a from the file variable_load_5.py and prints its value.<br />
+100-my_calculator.py is a program that imports all functions from the file calculator_1.py and handles basic operations.<br />
+101-easy_print.py is a program that prints #pythoniscool, followed by a new line, in the standard output.<br />
+102-magic_calculation.py is a Python function that does exactly the same as certain Python bytecode <br />
+103-fast_alphabet.p is a program that prints the alphabet in uppercase,<br />
