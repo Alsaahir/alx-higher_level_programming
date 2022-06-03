@@ -2,13 +2,14 @@
 import sys
 
 
-def main():
+def main(*argv):
     i = 1
+    sum = 0
     while i < len(sys.argv) - 1:
-        for arg in int(sys.argv[i]):
-            arg += int(sys.argv)
+        for args in (sys.argv[i]):
+            sum += int(args)
         i += 1
-    print("{}".format(arg))
+    print(sum)
 
 
 if __name__ == "__main__":
