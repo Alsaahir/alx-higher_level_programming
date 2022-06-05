@@ -2,10 +2,6 @@
 
 
 def no_c(my_string):
-    new_string = []
-    for x in my_string:
-        if x == "C" or x == "c":
-            continue
-        else:
-            new_string.append(x)
-    return (new_string)
+    my_string = my_string.translate({ord('c'): None})
+    my_string = my_string.translate({ord('C'): None})
+    return my_string
