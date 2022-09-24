@@ -1,17 +1,13 @@
 #!/usr/bin/python3
 """
-Python script that takes in a URL, sends a request to the URL and displays
-the body of the response (decoded in utf-8)
+same as 3-error_code with requests model
 """
-if __name__ == "__main__":
 
+if __name__ == '__main__':
     import requests
-    from requests.exceptions import HTTPError
     import sys
-
-    try:
-        response = requests.get(sys.argv[1])
-        response.raise_for_status()
-        print(response.text)
-    except HTTPError as e:
-        print("Error code: {}".format(str(e).split(' ')[0]))
+    r = requests.get(sys.argv[1])
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
+    else:
+        print(r.text)

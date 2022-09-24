@@ -1,16 +1,11 @@
 #!/usr/bin/python3
 """
-Python script that takes in a URL and an email, sends a POST request to the
-passed URL with the email as a parameter, and displays the body of the
-response (decoded in utf-8)
+same as 2-post_email with requests models
 """
-if __name__ == "__main__":
 
+if __name__ == '__main__':
     import requests
     import sys
-
-    url = sys.argv[1]
-    data = {'email': sys.argv[2]}
-    response = requests.post(url, data)
-
-    print(response.text)
+    para = {"email": sys.argv[2]}
+    r = requests.post(sys.argv[1], data=para)
+    print(r.text)
